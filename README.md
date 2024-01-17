@@ -76,3 +76,33 @@ cn("px-2 bg-slate-100 py-2 bg-slate-200")
 ## License
 
 Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+
+
+## How to run
+
+Create a .env file and populate with relevant environment variables
+
+### Installation
+
+```sh
+pnpm i
+```
+
+Development mode
+
+```sh
+pnpm run dev
+  
+```
+
+Build output
+```sh
+pnpm run build
+```
+Start production server
+```sh
+pnpm run start
+```
+
+
+<b>For other usefull commands take a look at the scripts sections of the package.json</b>
