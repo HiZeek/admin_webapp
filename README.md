@@ -1,15 +1,16 @@
-# next-template
+# asc-admin dashboard
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+A Next.js 13 dashboard built with Radix UI and Tailwind CSS.
 
 ## Features
 
 - Radix UI Primitives
 - Tailwind CSS
-- Fonts with `@next/font`
+- Fonts with `next/font`
 - Icons from [Lucide](https://lucide.dev)
 - Dark mode with `next-themes`
 - Automatic import sorting with `@ianvs/prettier-plugin-sort-imports`
+- Heavily dependents on the [shadcn-ui](https://ui.shadcn.com/) project. for pre-styled and customizable react components
 
 ## Tailwind CSS Features
 
@@ -29,13 +30,13 @@ The starter comes with `@ianvs/prettier-plugin-sort-imports` for automatically s
 import * as React from "react"
 import Link from "next/link"
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import "@/styles/globals.css"
+import { siteConfig } from "~/config/site"
+import { buttonVariants } from "~/components/ui/button"
+import "~/styles/globals.css"
 import { twMerge } from "tailwind-merge"
 
-import { NavItem } from "@/types/nav"
-import { cn } from "@/lib/utils"
+import { NavItem } from "~/components/types/nav"
+import { cn } from "~/components/lib/utils"
 ```
 
 ### Output
@@ -49,15 +50,15 @@ import { twMerge } from "tailwind-merge"
 
 // Followed by third-party modules
 // Space
-import "@/styles/globals.css"
+import "~/styles/globals.css"
 // styles
-import { NavItem } from "@/types/nav"
+import { NavItem } from "~/components/types/nav"
 // types
-import { siteConfig } from "@/config/site"
+import { siteConfig } from "~/components/config/site"
 // config
-import { cn } from "@/lib/utils"
+import { cn } from "~/componnets/lib/utils"
 // lib
-import { buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "~/components/ui/button"
 
 // components
 ```
